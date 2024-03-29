@@ -1,0 +1,115 @@
+#
+#    
+# ███████╗██████╗░░█████╗░░██████╗████████╗
+# ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝
+# █████╗░░██████╔╝██║░░██║╚█████╗░░░░██║░░░
+# ██╔══╝░░██╔══██╗██║░░██║░╚═══██╗░░░██║░░░
+# ██║░░░░░██║░░██║╚█████╔╝██████╔╝░░░██║░░░
+# ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═════╝░░░░╚═╝░░░
+#
+# https://discord.gg/pocketmine
+
+# Description of command
+command-description: Open market
+
+# Aliases for use command
+command-aliases:
+  - auctionhouse
+  - hdv
+  - ah
+
+# Message sent when a console try to execute the command
+not-player: §cOnly connected players can use this command
+
+# If player try to execute market in spectator mode
+spectator-player: §cYou cannot execute this command in spectator
+
+# Menu name
+menu-name: Frost Auction
+
+# 'Next' Item Information
+next-id: "paper"
+next-name: §r§cNext
+
+# 'Previous' Item Information
+previous-id: "paper"
+previous-name: §r§cPrevious
+
+# 'Refresh' Item Information
+refresh-id: "ender_pearl"
+refresh-name: §r§cRefresh
+
+# 'My Items' Item Information
+me-id: "chest"
+me-name: §r§cMy Items
+
+# 'Actual Page' Item information
+actual-id: "diamond"
+actual-name: §r§cActual Page
+
+# 'Confirm' Item information
+confirm-id: "stained_glass_pane"
+confirm-name: §r§aConfirm
+
+# 'Cancel' Item information
+cancel-id: "stained_glass_pane"
+cancel-name: §r§cCancel
+
+# When the player does not have enough money to buy the item
+no-money: "§cYou don't have enough money to buy this"
+
+# When the player does not have enough place in his inventory for the item
+full-inventory: §cYou have no place in your inventory for the item
+
+# When the item the player wants to buy has already been purchased
+item-already-purchased: §cSomeone has already bought this item before you
+
+# Tax on items in percentage
+tax: 5
+
+# Message sent to the seller when a player buys and the seller is online
+player-bought: §aA player just bought your item in the market !
+
+# When a player buys an item at the auction house ({money} for the money)
+item-purchased: §aYou just bought an item at the market for {money}$
+
+# When a player removes an item from the market
+item-deleted: §aYou have just removed your item from the market
+
+# When the price is invalid
+invalid-price: §cThe price indicated is invalid
+
+# When a player tries to sell air
+air-item: §cYou can't sell air
+
+# When a player sold a plugin
+item-sold: §aYou just sell an item at the market for {money}$
+
+# Information about the item in the market when it is sold
+lore:
+  - "§r§f"
+  - "§r§fSeller: §c{seller}"
+  - "§r§fPrice: §c{price}$"
+  - "§r§c"
+  - "§r§cClick here for buy"
+
+# Message sent when the player makes an unknown command
+unknown-command: §cThe command you just executed does not exist, please do /market sell [price]
+
+# Message when the player does not put any price
+no-price: §cYou have not indicated any price
+
+# Is there a home limit for each player?
+limit: true
+
+# The permissions are from the highest to the lowest, so you must start with the rank
+# that will have the most items in auction house and end with the rank that has the least
+permissions:
+  perm1: 30
+  perm2: 20
+
+# If the player does not have one of the above permissions
+default-limit: 10
+
+# Message sent when a player has reached the items limit
+limit-reached: §cYou have reached the limit of items in the auction house of your rank ({limit}) !
