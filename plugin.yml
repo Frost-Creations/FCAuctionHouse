@@ -1,0 +1,9 @@
+name: FCAuctionHouse
+version: 1.0.0
+api: 5.0.0
+main: AuctionHouse\Biswajit\Auction
+author: Biswajit
+
+permissions:
+  FCAuctionHouse.cmd.ah:
+    default: true
