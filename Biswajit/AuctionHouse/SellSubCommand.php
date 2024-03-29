@@ -15,7 +15,7 @@
  * @link https://frostnetwork.xyz/
  */
 
-namespace AuctionHouse\Biswajit;
+namespace Biswajit\AuctionHouse;
 
 use CortexPE\Commando\args\IntegerArgument;
 use pocketmine\command\CommandSender;
@@ -92,17 +92,7 @@ class SellSubCommand extends BaseSubCommand
     }
 
     private function getLimit(Player $player, Config $config): int
-    {
-        if (!$config->get("limit")) {
-            return -1;
-        }
-
-        foreach ($config->get("permissions") as $key => $value) {
-            if ($player->hasPermission($key)) {
-                return $value;
-            }
-        }
-
+ {
         return $config->get("default-limit");
     }
 }
