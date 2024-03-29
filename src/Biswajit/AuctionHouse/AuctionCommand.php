@@ -231,8 +231,8 @@ class AuctionCommand extends BaseCommand
         } else if (!$file->exists($id)) {
             $player->sendMessage($config->get("item-already-purchased"));
             return;
-        });
-    }
+        }
+    });
         if ($type === 0) {
             $target = Server::getInstance()->getPlayerExact($seller);
             $_price = floor($price * (1 - intval($config->get("tax")) / 100));
