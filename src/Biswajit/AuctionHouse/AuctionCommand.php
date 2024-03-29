@@ -28,16 +28,11 @@ use pocketmine\utils\Config;
 
 class AuctionCommand extends BaseCommand
 {
-    public function __construct()
-    {
-        parent::__construct(Auction::getInstance(), "market", "Open market", ["auctionhouse", "hdv", "ah"]);
-        $this->setPermission("FCAuctionHouse.cmd.ah");
-    }
 
     protected function prepare(): void
     {
-        $this->registerSubCommand(new SellSubCommand(Auction::getInstance(), "sell", "Sell items", []));
         $this->setPermission("FCAuctionHouse.cmd.ah");
+        $this->registerSubCommand(new SellSubCommand(Auction::getInstance(), "sell", "Sell items", []));
     }
 
     public function onRun(Player|CommandSender $sender, string $aliasUsed, array $args): void
