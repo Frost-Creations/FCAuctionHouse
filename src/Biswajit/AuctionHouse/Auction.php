@@ -25,7 +25,7 @@ final class Auction extends PluginBase implements Listener{
         $this->saveResource("config.yml");
         $this->saveResource("playerdata.yml");
         $this->saveResource("AuctionHouse.json");
-        Server::getInstance()->getCommandMap()->register("FcAuction", new AuctionCommand());
+        $this->getServer()->getCommandMap()->register(AuctionHouse, new AuctionCommand($this, "ah", "AuctionHouse command"));
 
         if (!PacketHooker::isRegistered()){
             PacketHooker::register($this);
