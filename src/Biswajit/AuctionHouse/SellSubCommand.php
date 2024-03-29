@@ -35,8 +35,8 @@ class SellSubCommand extends BaseSubCommand
      */
     protected function prepare(): void
     {
-        $this->registerArgument(0, new IntegerArgument("price", true));
         $this->setPermission("FCAuctionHouse.cmd.ah");
+        $this->registerArgument(0, new IntegerArgument("price", true));
     }
 
     public function onRun(CommandSender|Player $sender, string $aliasUsed, array $args): void
