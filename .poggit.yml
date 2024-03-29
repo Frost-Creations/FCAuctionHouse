@@ -5,6 +5,7 @@ branches:
 projects: 
   FCAuctionHouse:
     path: ""
+    icon: icon.png
     lint: false
     libs:
       - src: David-pm-pl/libEco/libEco
