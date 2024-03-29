@@ -2,16 +2,18 @@
 build-by-default: true
 branches:
 - main
-projects: []
-   lint: false
-   libs:
-     - src: David-pm-pl/libEco/libEco
-       version: ^3.0.0
-       branch: stable
-     - src: muqsit/invmenu/InvMenu
-       version: ^4.6.5
-       branch: "pm5"
-     - src: CortexPE/Commando/Commando
-       version: ^3.2.0
-       branch: master
+projects: 
+  FCAuctionHouse:
+    path: ""
+    lint: false
+    libs:
+      - src: David-pm-pl/libEco/libEco
+        version: ^3.0.0
+        branch: stable
+      - src: muqsit/invmenu/InvMenu
+        version: ^4.6.5
+        branch: "pm5"
+      - src: CortexPE/Commando/Commando
+        version: ^3.2.0
+        branch: master
 ...
