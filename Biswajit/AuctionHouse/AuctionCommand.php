@@ -1,6 +1,6 @@
 <?php /** @noinspection PhpDeprecationInspection */
 
-namespace AuctionHouse\Biswajit;
+namespace Biswajit\AuctionHouse;
 
 use CortexPE\Commando\BaseCommand;
 use CortexPE\Commando\IRunnable;
